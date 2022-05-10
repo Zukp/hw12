@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
 
-    // бул жерде биздин логин пароль туура болуп откондон кийин локалСторежке сактап койот качан биз озубуз false кылбайынча
+    
 
   const strodUserLoggedInfo =  localStorage.getItem('isLoggedIn');
   if(strodUserLoggedInfo === '1'){  
@@ -21,13 +21,13 @@ function App() {
 
   const loginHandler = (email, password) => {
 
-    localStorage.setItem('isLoggedIn','1'); //
+    localStorage.setItem('isLoggedIn','1'); 
     setIsLoggedIn(true); 
 
   };
 
-  const logoutHandler = () => {
-    localStorage.removeItem('isLoggedIn') // localeStroage очитка болуп жатат logout бассканда
+  const logoutHandler = () => {   
+    localStorage.removeItem('isLoggedIn') 
     setIsLoggedIn(false);
   };
 
